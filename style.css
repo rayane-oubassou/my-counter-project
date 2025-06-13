@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background: linear-gradient(-65deg, #24766a, #83bab7, #2f95a2, #9dc9ce);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#countLabel {
+  font-weight:normal;
+  font-size: 10rem;
+  color: rgb(0, 0, 0);
+  margin-bottom: 1.5rem;
+}
+
+.buttons {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(123, 212, 205);
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttons:hover {
+  background-color: white;
+}
